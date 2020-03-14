@@ -2,8 +2,11 @@ package com.leenoimc.tutorialmod.init;
 
 import com.leenoimc.tutorialmod.TutorialMod;
 
+import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,11 +17,17 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(TutorialMod.MOD_ID)
 public class ItemInit {
 	public static final Item tutorial_item = null;
+	public static final Item tutorial_food = null;
 
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
-		event.getRegistry().register(new Item(new Item.Properties()
-				.group(ItemGroup.MISC))
-				.setRegistryName("tutorial_item"));
+		event.getRegistry()
+				.register(new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName("tutorial_item"));
+
+		event.getRegistry()
+				.register(new Item(new Item.Properties().group(ItemGroup.FOOD)
+						.food(new Food.Builder().hunger(20).saturation(40.0F)
+								.effect(new EffectInstance(Effects.GLOWING, 60, 3), 6.0F).build()))
+										.setRegistryName("tutorial_food"));
 	}
 }
