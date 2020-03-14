@@ -30,7 +30,7 @@ A tutorial mod
 
 
 
-
+# Dont touch anything down here unless you know what you are doing! - LeenoiMC
 [[dependencies.easiersurvival]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
