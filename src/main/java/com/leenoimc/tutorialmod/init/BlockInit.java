@@ -1,13 +1,13 @@
 package com.leenoimc.tutorialmod.init;
 
 import com.leenoimc.tutorialmod.TutorialMod;
+import com.leenoimc.tutorialmod.TutorialMod.TutorialItemGroup;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,7 +31,7 @@ public class BlockInit
 	@SubscribeEvent()
 	public static void registerBlockItems(final RegistryEvent.Register<Item> event)
 	{
-		event.getRegistry().register(new BlockItem(tutorial_block, new Item.Properties().group(ItemGroup.DECORATIONS))
+		event.getRegistry().register(new BlockItem(tutorial_block, new Item.Properties().group(TutorialItemGroup.instance))
 				.setRegistryName("tutorial_block"));
 	}
 }
