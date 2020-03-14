@@ -3,6 +3,10 @@ package com.leenoimc.tutorialmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.leenoimc.tutorialmod.init.ItemInit;
+
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -50,5 +54,21 @@ public class TutorialMod
     public static void loadCompleteEvent(FMLLoadCompleteEvent event)
     {
     	
+    }
+    
+    public static class TutorialItemGroup extends ItemGroup
+    {
+		public static final TutorialItemGroup instance = new TutorialItemGroup(ItemGroup.GROUPS.length, "tutorialmod");
+    	
+    	public TutorialItemGroup(int index, String label)
+    	{
+			super(index, label);
+		}
+
+		@Override
+		public ItemStack createIcon()
+		{
+			return new ItemStack(ItemInit.tutorial_item);
+		}
     }
 }
