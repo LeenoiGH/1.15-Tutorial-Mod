@@ -54,7 +54,7 @@ http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
 
 A word from LeenoiMC
 ====================
-Be sure to update your mappings often! The version is still unfinished (in terms of the code) wich is why I recommend you do this.
+Be sure to update your mappings often! The version is still unfinished (in terms of the code) which is why I recommend you do this.
 
 1. Go to: http://export.mcpbot.bspk.rs/
 2. Find the latest mappings generated. It should be in a box with text like this: mcp_snapshot-20200314-1.15.1.zip
