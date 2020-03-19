@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"tutorialmod:tutorial_pickaxe",
+		"tutorialmod:tutorial_axe",
+		"tutorialmod:tutorial_sword",
+		"tutorialmod:tutorial_shovel",
+		"tutorialmod:tutorial_hoe"
+	]
+}
