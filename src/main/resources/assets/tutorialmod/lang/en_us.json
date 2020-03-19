@@ -1,6 +1,9 @@
 {
 	"item.tutorialmod.tutorial_item": "Tutorial Item",
+	"item.tutorialmod.special_item": "Special Item",
+	
 	"item.tutorialmod.tutorial_food": "Tutorial Food",
+	
 	"item.tutorialmod.tutorial_pickaxe": "Tutorial Pickaxe",
 	"item.tutorialmod.tutorial_axe": "Tutorial Axe",
 	"item.tutorialmod.tutorial_sword": "Tutorial Sword",

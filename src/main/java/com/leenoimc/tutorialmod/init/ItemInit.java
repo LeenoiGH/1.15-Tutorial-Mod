@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 import com.leenoimc.tutorialmod.TutorialMod;
 import com.leenoimc.tutorialmod.TutorialMod.TutorialItemGroup;
+import com.leenoimc.tutorialmod.objects.items.SpecialItem;
 
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Food;
@@ -41,11 +42,17 @@ public class ItemInit {
 		event.getRegistry().register(
 				new Item(new Item.Properties().group(TutorialItemGroup.instance)).setRegistryName("tutorial_item"));
 
+		event.getRegistry().register(new SpecialItem(new Item.Properties().group(TutorialItemGroup.instance))
+				.setRegistryName("special_item"));
+		
+		// Food
 		event.getRegistry()
 				.register(new Item(new Item.Properties().group(TutorialItemGroup.instance)
 						.food(new Food.Builder().hunger(20).saturation(40.0F)
 								.effect(new EffectInstance(Effects.GLOWING, 60, 3), 6.0F).build()))
 										.setRegistryName("tutorial_food"));
+		
+		// Tools
 		event.getRegistry().register(new PickaxeItem(ModItemTier.TUTORIAL, 10, 10.7F,
 				new Item.Properties().group(TutorialItemGroup.instance)).setRegistryName("tutorial_pickaxe"));
 		event.getRegistry().register(

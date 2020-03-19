@@ -9,10 +9,10 @@ import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+//import net.minecraftforge.fml.common.Mod;
+//import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 
-@Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Bus.FORGE) // note: this line could get the game to lag.
+//@Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Bus.FORGE) // note: this line could get the game to lag as it places blocks!
 public class TestJumpEvent
 {
 	@SubscribeEvent
