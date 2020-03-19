@@ -1,6 +1,13 @@
 {
 	"item.tutorialmod.tutorial_item": "Tutorial Item",
 	"item.tutorialmod.tutorial_food": "Tutorial Food",
+	"item.tutorialmod.tutorial_pickaxe": "Tutorial Pickaxe",
+	"item.tutorialmod.tutorial_axe": "Tutorial Axe",
+	"item.tutorialmod.tutorial_sword": "Tutorial Sword",
+	"item.tutorialmod.tutorial_shovel": "Tutorial Shovel",
+	"item.tutorialmod.tutorial_hoe": "Tutorial Hoe",
 	
-	"block.tutorialmod.tutorial_block": "Tutorial Block"
+	"block.tutorialmod.tutorial_block": "Tutorial Block",
+	
+	"itemGroup.tutorialmod": "Tutorial ItemGroup"
 }
