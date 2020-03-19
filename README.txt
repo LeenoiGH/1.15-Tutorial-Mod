@@ -51,3 +51,14 @@ https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
 
 For more details update more often refer to the Forge Forums:
 http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+
+A word from LeenoiMC
+====================
+Be sure to update your mappings often! The version is still unfinished (in terms of the code) which is why I recommend you do this.
+
+1. Go to: http://export.mcpbot.bspk.rs/
+2. Find the latest mappings generated. It should be in a box with text like this: mcp_snapshot-20200314-1.15.1.zip
+3. With the text in the box, copy the NUMBERS. In this case, it would be "20200314-1.15.1"
+4. Get into your build.gradle file. Find the line: mappings channel: 'snapshot', version: '20190719-1.14.3'
+5. In the version field, change the numbers to the text you copied from the website.
+6. Now you have updated your mappings. Rerun the setup stage (fo to line 17 of this file for more information)
