@@ -73,5 +73,10 @@ public class SpecialItem extends Item
 		entity.getEntityWorld().setBlockState(entity.getPosition().down(), BlockInit.tutorial_block.getDefaultState());
 		return super.onEntityItemUpdate(stack, entity);
 	}
-
+	
+	@Override
+	public int getBurnTime(ItemStack itemStack)
+	{
+		return 600;
+	}
 }
