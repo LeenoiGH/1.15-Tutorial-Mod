@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "T",
+    "T",
+    "S"
+  ],
+  "key": {
+    "T": {
+      "item": "tutorialmod:tutorial_block"
+    },
+    "S": {
+      "item": "tutorialmod:tutorial_item"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:tutorial_sword"
+  }
+}

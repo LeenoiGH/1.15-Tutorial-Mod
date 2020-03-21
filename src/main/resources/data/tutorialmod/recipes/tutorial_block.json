@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:stone_bricks"
+  },
+  "result": "tutorialmod:tutorial_block",
+  "experience": 5.0,
+  "cookingtime": 50
+}
