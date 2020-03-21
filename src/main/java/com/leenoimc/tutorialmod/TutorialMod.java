@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.leenoimc.tutorialmod.init.ItemInit;
+import com.leenoimc.tutorialmod.world.gen.TutorialOreGen;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -53,7 +54,7 @@ public class TutorialMod
     @SubscribeEvent
     public static void loadCompleteEvent(FMLLoadCompleteEvent event)
     {
-    	
+    	TutorialOreGen.generateOre();
     }
     
     public static class TutorialItemGroup extends ItemGroup

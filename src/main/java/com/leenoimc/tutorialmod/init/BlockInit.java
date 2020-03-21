@@ -2,6 +2,7 @@ package com.leenoimc.tutorialmod.init;
 
 import com.leenoimc.tutorialmod.TutorialMod;
 import com.leenoimc.tutorialmod.TutorialMod.TutorialItemGroup;
+import com.leenoimc.tutorialmod.objects.blocks.BlockQuarry;
 import com.leenoimc.tutorialmod.objects.blocks.SpecialBlock;
 
 import net.minecraft.block.Block;
@@ -21,6 +22,7 @@ import net.minecraftforge.registries.ObjectHolder;
 public class BlockInit {
 	public static final Block tutorial_block = null;
 	public static final Block special_block = null;
+	public static final Block quarry = null;
 
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
@@ -30,6 +32,7 @@ public class BlockInit {
 				.register(new SpecialBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(0.5F, 15.0F)
 						.harvestLevel(2).harvestTool(ToolType.AXE).sound(SoundType.ANVIL))
 								.setRegistryName("special_block"));
+		event.getRegistry().register(new BlockQuarry(Block.Properties.create(Material.IRON)).setRegistryName("quarry"));
 	}
 
 	@SubscribeEvent()
@@ -40,5 +43,7 @@ public class BlockInit {
 		event.getRegistry()
 		.register(new BlockItem(special_block, new Item.Properties().group(TutorialItemGroup.instance))
 				.setRegistryName("special_block"));
+		event.getRegistry().register(new BlockItem(quarry, new Item.Properties().group(TutorialItemGroup.instance))
+				.setRegistryName("quarry"));
 	}
 }
