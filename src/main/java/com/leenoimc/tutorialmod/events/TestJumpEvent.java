@@ -12,7 +12,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 //import net.minecraftforge.fml.common.Mod;
 //import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 
-//@Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Bus.FORGE) // note: this line could get the game to lag as it places blocks!
+//@Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Bus.FORGE) // note: this line could get the game to lag as it places blocks! // another note: the @Mod line activates ethe whole event
 public class TestJumpEvent
 {
 	@SubscribeEvent

@@ -17,7 +17,13 @@
 	
 	"block.tutorialmod.tutorial_block": "Tutorial Block",
 	"block.tutorialmod.special_block": "Special Block",
+	
 	"block.tutorialmod.quarry": "Quarry",
+	
+	"block.tutorialmod.example_button": "Example Button",
+	"block.tutorialmod.example_stairs": "Example Stairs",
+	"block.tutorialmod.example_pressure_plate": "Example Pressure Plate",
+	"block.tutorialmod.example_fence": "Example Fence",
 	
 	"itemGroup.tutorialmod": "Tutorial Group"
 }
