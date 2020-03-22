@@ -17,6 +17,7 @@
 	
 	"block.tutorialmod.tutorial_block": "Tutorial Block",
 	"block.tutorialmod.special_block": "Special Block",
+	"block.tutorialmod.quarry": "Quarry",
 	
-	"itemGroup.tutorialmod": "Tutorial ItemGroup"
+	"itemGroup.tutorialmod": "Tutorial Group"
 }
